@@ -1,0 +1,62 @@
+:root {
+  --olive: #556b2f;
+  --beige: #f5f5dc;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: var(--beige);
+  color: #333;
+}
+
+header {
+  background-color: var(--olive);
+  color: var(--beige);
+  padding: 1rem;
+  text-align: center;
+}
+
+main {
+  padding: 1rem;
+}
+
+#playlist {
+  list-style: none;
+  padding: 0;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.track {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--olive);
+  color: var(--beige);
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.5rem;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.track .title {
+  font-weight: bold;
+}
+
+.track a {
+  color: var(--olive);
+  background-color: var(--beige);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  font-weight: bold;
+}
+
+.track:hover {
+  background-color: #6b8e23;
+}
